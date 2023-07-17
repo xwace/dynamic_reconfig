@@ -142,6 +142,9 @@ add_executable(${PROJECT_NAME}_node src/dynamic_tutorial.cpp)
 #add_dependencies(${PROJECT_NAME}_node ${PROJECT_NAME}_gencfg)
 target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES} )
 
+add_executable(${PROJECT_NAME}_client src/client.cpp)
+target_link_libraries(${PROJECT_NAME}_client ${catkin_LIBRARIES} )
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
